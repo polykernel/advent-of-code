@@ -1,0 +1,6 @@
+.{
+    .name = "aoc-2024",
+    .version = "1.0.0",
+    .dependencies = .{},
+    .paths = .{""},
+}

@@ -1,0 +1,29 @@
+[formatter.mdformat]
+command = "mdformat"
+excludes = []
+includes = ["*.md"]
+options = []
+
+[formatter.nix]
+command = "nixfmt"
+excludes = []
+includes = ["*.nix"]
+options = []
+
+[formatter.toml-sort]
+command = "toml-sort"
+excludes = []
+includes = ["*.toml"]
+options = ["-i"]
+
+[formatter.typos]
+command = "typos"
+excludes = []
+includes = ["*"]
+options = ["--write-changes"]
+
+[formatter.zig]
+command = "zig"
+excludes = []
+includes = ["*.zig", "*.zon"]
+options = ["fmt"]
