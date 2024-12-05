@@ -29,6 +29,7 @@ pub fn main() !void {
     var xmas_count2: usize = 0;
 
     const image = try grid.toOwnedSlice();
+    defer gpa.free(image);
 
     const m = image.len;
     const n = image[0].len;
