@@ -10,6 +10,8 @@ const gpa = util.gpa;
 
 const data = @embedFile("data/day02.txt");
 
+const stdout = std.io.getStdOut().writer();
+
 pub fn main() !void {
     var safe_count_1: usize = 0;
     var safe_count_2: usize = 0;
@@ -111,8 +113,8 @@ pub fn main() !void {
         }
     }
 
-    print("Part 1: {d}\n", .{safe_count_1});
-    print("Part 2: {d}\n", .{safe_count_2});
+    try stdout.print("Part 1: {d}\n", .{safe_count_1});
+    try stdout.print("Part 2: {d}\n", .{safe_count_2});
 }
 
 fn checkLevels(levels: []const i32) bool {

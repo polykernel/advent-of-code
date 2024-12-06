@@ -10,6 +10,8 @@ const gpa = util.gpa;
 
 const data = @embedFile("data/day01.txt");
 
+const stdout = std.io.getStdOut().writer();
+
 pub fn main() !void {
     var freq = Map(u32, u32).init(gpa);
     defer freq.deinit();
@@ -42,8 +44,6 @@ pub fn main() !void {
         break :blk total;
     };
 
-    print("Part 1: {d}\n", .{total_dist});
-
     const sim_score = blk: {
         var score: usize = 0;
         for (loc_ids_1.items) |a| {
@@ -52,7 +52,8 @@ pub fn main() !void {
         break :blk score;
     };
 
-    print("Part 2: {d}\n", .{sim_score});
+    try stdout.print("Part 1: {d}\n", .{total_dist});
+    try stdout.print("Part 2: {d}\n", .{sim_score});
 }
 
 // Useful stdlib functions
