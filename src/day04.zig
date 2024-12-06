@@ -10,6 +10,8 @@ const gpa = util.gpa;
 
 const data = @embedFile("data/day04.txt");
 
+const stdout = std.io.getStdOut().writer();
+
 pub fn main() !void {
     const part1_pattern1 = 'X' << 24 | 'M' << 16 | 'A' << 8 | 'S';
     const part1_pattern2 = 'S' << 24 | 'A' << 16 | 'M' << 8 | 'X';
@@ -163,8 +165,8 @@ pub fn main() !void {
         }
     }
 
-    print("Part 1: {d}\n", .{xmas_count1});
-    print("Part 2: {d}\n", .{xmas_count2});
+    try stdout.print("Part 1: {d}\n", .{xmas_count1});
+    try stdout.print("Part 2: {d}\n", .{xmas_count2});
 }
 
 // Useful stdlib functions

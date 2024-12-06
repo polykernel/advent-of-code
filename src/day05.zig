@@ -11,6 +11,8 @@ const gpa = util.gpa;
 
 const data = @embedFile("data/day05.txt");
 
+const stdout = std.io.getStdOut().writer();
+
 pub fn main() !void {
     const max_page = 256;
     const inf = 0x3f3f3f3f;
@@ -110,8 +112,8 @@ pub fn main() !void {
         }
     }
 
-    print("Part 1: {d}\n", .{part1_ans});
-    print("Part 2: {d}\n", .{part2_ans});
+    try stdout.print("Part 1: {d}\n", .{part1_ans});
+    try stdout.print("Part 2: {d}\n", .{part2_ans});
 }
 
 // Useful stdlib functions
