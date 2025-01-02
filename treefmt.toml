@@ -1,9 +1,3 @@
-[formatter.mdformat]
-command = "mdformat"
-excludes = []
-includes = ["*.md"]
-options = []
-
 [formatter.nix]
 command = "nixfmt"
 excludes = []
@@ -19,8 +13,8 @@ options = ["-i"]
 [formatter.typos]
 command = "typos"
 excludes = []
-includes = ["*"]
-options = ["--write-changes"]
+includes = ["."]
+options = []
 
 [formatter.zig]
 command = "zig"

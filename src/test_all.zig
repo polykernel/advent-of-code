@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2020-2024 Martin Wickham
+// SPDX-License-Identifier: MIT
+
 test {
     _ = @import("util.zig");
     _ = @import("day01.zig");

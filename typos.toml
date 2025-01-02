@@ -1,0 +1,8 @@
+[files]
+extend-exclude = [
+  "typos.toml",
+  "build.zig.zon",
+  "flake.lock",
+  "src/data/",
+  "devenv_root"
+]
