@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2020-2024 Martin Wickham
+// SPDX-License-Identifier: MIT
+
 const std = @import("std");
 
 const max_size = 100_000_000;

@@ -1,0 +1,28 @@
+version = 1
+
+[[annotations]]
+path = [
+  ".editorconfig",
+  ".envrc",
+  "devenv_root",
+  "treefmt.toml",
+  "typos.toml",
+  ".gitattributes",
+  ".gitignore",
+  "flake.lock",
+  "flake.nix",
+  "devenv.nix",
+  "build.zig",
+  "build.zig.zon",
+  "README.md"
+]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = [
+  "src/data/*.txt",
+  "template/hashes.bin"
+]
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"

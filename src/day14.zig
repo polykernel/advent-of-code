@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2020-2024 Martin Wickham
+// SPDX-License-Identifier: MIT
+
 const std = @import("std");
 const Allocator = std.mem.Allocator;
 const List = std.ArrayList;
