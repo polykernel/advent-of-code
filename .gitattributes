@@ -14,6 +14,3 @@
 # Text files to always have LF (unix) line endings on checkout.
 *.sh text eol=lf
 *.zig text eol=lf
-
-# Evaluate content of devenv_root locally
-devenv_root filter=update-devenv-root
